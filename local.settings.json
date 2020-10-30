@@ -1,0 +1,8 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=<Account-Name>;AccountKey=<Account-Key>;EndpointSuffix=core.windows.net"
+  },
+  "ConnectionStrings": {}
+}
