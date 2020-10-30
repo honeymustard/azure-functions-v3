@@ -27,8 +27,9 @@ This works just like it does in ASP.NET Core applications
 ## Deploy functions to Azure with Github Actions
 * Download publish settings from Azure Function in Azure Portal
 * Paste publish settings in a Github secret, call it AZURE_FUNCTIONAPP_PUBLISH_PROFILE
-* View example action workflow [Azure.yml](.github/workflows/azure.yml)
-* Commit and push to main branch
+* View example action workflow [Azure.yml](.github/workflows/azure.yml), update application name
+* Deploy by committing to main branch
+* All functions can be monitored in Azure Portal
 
 ## Related documentation
 * [Azurite](https://github.com/Azure/Azurite)
