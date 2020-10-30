@@ -37,7 +37,7 @@ namespace Honeymustard.Serivces
             }
             catch(Exception e)
             {
-                Logger.LogError($"NaiveClient: {e.ToString()}");
+                Logger.LogError($"FakeClient: {e.ToString()}");
             }
 
             return "";

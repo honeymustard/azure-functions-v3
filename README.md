@@ -6,7 +6,7 @@ Azure Functions will run locally like they run in Azure, if you want to start a 
 
 * Download [azure-functions-core-tools](https://github.com/Azure/azure-functions-core-tools) to get the Func CLI
 * Update AzureWebJobsStorage account in [local.settings.json](local.settings.json) with Azure blob storage credentials
-* View source for example timer [HorseTimer](Functions/HorseTimer)
+* View source for example timer [HorseTimer](Functions/Horse/HorseTimer)
 
 ```
 # Build the project
@@ -21,8 +21,8 @@ http://localhost:7071/admin/functions/HorseTimer
 
 ## Use the Dependency Injection container
 This works just like it does in ASP.NET Core applications
-* Add a service to the DI-container in [Startup.cs](Startup)
-* View an example service [FakeClient](Services/FakeClient)
+* Add a service to the DI-container in [Startup](Startup.cs)
+* View an example service [FakeClient](Services/FakeClient.cs)
 
 ## Deploy functions to Azure with Github Actions
 * Download publish settings from Azure Function in Azure Portal
