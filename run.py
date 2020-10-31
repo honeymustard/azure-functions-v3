@@ -2,6 +2,8 @@ import sys
 import json
 import requests
 
+# pip install requests
+#
 # run a function
 # python run.py HorseTimer
 #

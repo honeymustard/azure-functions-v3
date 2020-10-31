@@ -2,3 +2,6 @@ bin
 obj
 appsettings.json
 .vscode
+__azurite_db_*
+__blobstorage__
+__queuestorage__
