@@ -2,8 +2,8 @@
 A sample Azure Functions 3.0 project with dependency injection, github action deploy routine, ready for local development.
 
 ## Notes
-* Ignore the version 2.0 in [hosts.json](hosts.json), it is not related to the runtime version
-* Timeout limit and other settings can be specified in [hosts.json](hosts.json)
+* Ignore the version 2.0 in [host.json](host.json), it is not related to the runtime version
+* Timeout limit and other settings can be specified in [host.json](host.json)
 * Create as many folders and functions as you want in the [Functions](Functions) folder
 * New functions will appear in Function app after a deploy
 
@@ -33,15 +33,15 @@ http://localhost:7071/admin/functions/HorseTimer
 
 ## Use the Dependency Injection container
 This works just like it does in ASP.NET Core applications
-* Add a service to the DI-container in [Startup](Startup.cs)
-* View an example service [FakeClient](Services/FakeClient.cs)
-* View an example function [HorseTimer](Functions/HorseTimer.cs)
+* Add a service to the DI-container in [Startup.cs](Startup.cs)
+* View an example service [FakeClient.cs](Services/FakeClient.cs)
+* View an example function [HorseTimer.cs](Functions/HorseTimer.cs)
 
 ## Deploy functions to Azure with Github Actions
 * Create an Azure blob storage account in Azure Portal
-* Create an App setting named AzureWebJobsStorage with blob account connection string
+* Create an App setting named **AzureWebJobsStorage** with blob account connection string
 * Download publish settings from Azure Function App in Azure Portal
-* Create a Github secret named AZURE_FUNCTIONAPP_PUBLISH_PROFILE, paste publish settings
+* Create a Github secret named *AZURE_FUNCTIONAPP_PUBLISH_PROFILE*, paste publish settings
 * Insert application name in Github action workflow [Azure.yml](.github/workflows/azure.yml)
 * Deploy to Azure by pushing a commit to main branch
 
