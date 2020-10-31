@@ -4,6 +4,8 @@ A sample Azure Functions 3.0 project with dependency injection, github action de
 ## Notes
 * Ignore the version 2.0 in [hosts.json](hosts.json), it is not related to the runtime version
 * Timeout limit and other settings can be specified in [hosts.json](hosts.json)
+* Create as many folders and functions as you want in the [Functions](Functions) folder
+* New functions will appear in Function app after a deploy
 
 ## How to run Azure functions locally
 Azure Functions will run locally like they run in Azure, if you want to start a timer on demand you can trigger it with a [script](run.py) or use [Postman](https://www.postman.com/downloads/) to send requests. Azure blob storage credentials can be added to [local.settings.json](local.settings.json) if you don't like the additional step of starting Azurite manually.
@@ -42,7 +44,6 @@ This works just like it does in ASP.NET Core applications
 * Create a Github secret named AZURE_FUNCTIONAPP_PUBLISH_PROFILE, paste publish settings
 * Insert application name in Github action workflow [Azure.yml](.github/workflows/azure.yml)
 * Deploy to Azure by pushing a commit to main branch
-* All functions can be monitored in Azure Portal
 
 ## Related documentation
 * [Azurite](https://github.com/Azure/Azurite)
